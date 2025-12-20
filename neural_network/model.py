@@ -176,11 +176,6 @@ class NeuralNetwork:
             layer.apply_gradients(learn_rate / len(training_batch))
             layer.clear_gradients()
     
-
-
-        
-
-
     
 
     
