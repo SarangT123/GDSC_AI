@@ -111,26 +111,6 @@ class Layer:
         self.bias_gradients = np.zeros(self.n_neurons)
 
 
-    """
-    def update_gradients(self,neuron_values):
-        for neuron_out in range(0,self.n_neurons):
-            for neuron_in in range(0,self.n_inputs):
-                dz_dw = self.inputs[neuron_in]
-                # Evaluating the Derivative of cost/loss wrt weight
-                dL_dw = dz_dw * neuron_values # neuron_values  =  da/dw * dc/da
-
-
-                # changing the gradient accordingly 
-                self.weight_gradients[neuron_in][neuron_out] += dL_dw
-
-            # Evaluate partial derivative of dL/db of the current node
-            # dL/db = dz/db x da/db x dl/db (remember a is input or the activated output)
-            # z = aw + b imples dz/db = 1
-            # dL/dw = 1* neuron_values 
-            dL_db =  neuron_values
-            self.bias_gradients[neuron_out] += dL_db
-    """
-
 
 
 
