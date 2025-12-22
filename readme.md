@@ -1,3 +1,5 @@
+The documentation (Handwritten) is available at :  [Documentation](documentation/documentation.md)
+
 # Todo
 - ~saving a model~
 - Uploading of training data in a suitable format
