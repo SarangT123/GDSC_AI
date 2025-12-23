@@ -6,7 +6,7 @@ network-architecture:
 
 training-parameters:
   learning_rate: 0.01
-  epochs: 1000 #how many times the entire dataset is passed through the network
+  epochs: 50 #how many times the entire dataset is passed through the network
   train_test_split: 0.8
   normalization: true
   batch_size: 32

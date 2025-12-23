@@ -110,7 +110,7 @@ for i in range(len(X_test)):
     test_data.append(dp)
 
 # Step 6: Create the neural network
-layer_sizes = config['neural-network-architecture']
+layer_sizes = config['network-architecture']
 model = NeuralNetwork(layer_sizes)
 
 print(f"\nNeural Network Architecture: {layer_sizes}")
@@ -164,7 +164,7 @@ print(f"Test Accuracy: {test_accuracy:.2f}%")
 import pickle
 
 print("\nSaving model...")
-with open('placement_model.pkl', 'wb') as f:
+with open('placement_model.nn', 'wb') as f:
     pickle.dump({
         'model': model,
         'means': means,
