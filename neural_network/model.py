@@ -145,7 +145,6 @@ class NeuralNetwork:
         for data_point in data:
             total_cost += self.loss_single(data_point)
 
-    # Reminder : document this functions working in an external file later 
 
 
     def update_all_gradients(self, data_point):
@@ -178,6 +177,8 @@ class NeuralNetwork:
             layer.apply_gradients(learn_rate / len(training_batch))
             layer.clear_gradients()
         
+
+
         
 
     

@@ -21,5 +21,8 @@ This is a handwritten notes documenting the math and other details behind each f
 # Gradient Descent
 ![Gradient Descent](Layer_class_4.png)
 
+# Neural Network Architecture
+![Neural Network Architecture](Neural_Network_class.png)
+
 <!-- 
 Since the documentation is handwritten updates will result in large(comparitively) size changes since they are all images. -->
