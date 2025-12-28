@@ -2,7 +2,7 @@ import pickle
 import numpy as np
 from .model import NeuralNetwork
 def save_network(means,stds,model:NeuralNetwork,filename="model.nn"):
-    with open('placement_model.nn', 'wb') as f:
+    with open(filename, 'wb') as f:
         pickle.dump({
             'model': model,
             'means': means,
