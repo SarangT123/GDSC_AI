@@ -144,6 +144,7 @@ class NeuralNetwork:
         total_cost = 0
         for data_point in data:
             total_cost += self.loss_single(data_point)
+        return total_cost / len(data)
 
 
 
