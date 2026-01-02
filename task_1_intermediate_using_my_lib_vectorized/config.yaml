@@ -1,0 +1,20 @@
+network-architecture:
+  - 784    # Input layer (28x28 MNIST images)
+  - 256
+  - 128
+  - 64
+  - 32
+  - 10     # Output layer (digits 0–9)
+
+network-functions:
+  activation: sigmoid
+  activation_derivative: sigmoid_derivative
+  output_activation: sigmoid
+  output_activation_derivative: sigmoid_derivative
+  loss_function: square_loss
+  loss_derivative: square_loss_derivative
+
+training-parameters:
+  epochs: 20
+  batch_size: 32
+  learning_rate: 0.1
