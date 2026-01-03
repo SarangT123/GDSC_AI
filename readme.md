@@ -10,6 +10,7 @@ The documentation (Handwritten) is available at :  [Documentation](documentation
 - Every task must be ran from it's respective folder to avoid import errors.
 
 - `task1_beginner` : Contains the code for task 1 in beginner's track use `train.py` to train the model and `use.py` to use the trained model for predictions.
+- `task1_beginner_using_vectorized` : Contains the code for task 1 in beginner's track using the custom neural network library created in `neural_network_vectorized/` and uses vectorization this is much faster and can be used for actual use.
 - `task1_intermediate_using_my_lib` : Contains the code for task 1 in intermediate track using the custom neural network library created in `neural_network/` and uses scalars this is extremely slow and this is just an attempt not reccommended for actual use.
 - `task1_intermediate_using_my_lib_vectorized` : Contains the code for task 1 in intermediate track using the custom neural network library created in `neural_network_vectorized/` and uses vectorization this is much faster and can be used for actual use. there are two training file available one trains using the mnist dataset as it is and the other one shifts and adds noise to the dataset to artificially increase the size of the dataset and improve generalization. the config file can be used to change training parameters. and `use.py` to use the trained model for predictions. The config file usage is documented in the readme present in the folder. link : [readme](task_1_intermediate_using_my_lib_vectorized/readme.md)
 
