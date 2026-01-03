@@ -1,8 +1,8 @@
-from neural_network_vectorized import load_network
+from neural_network_vectorized_multiple_models import load_network
 import tkinter as tk
 import numpy as np
 
-model = load_network("mnist_model.nn")
+model = load_network(input("Enter model filename (default: 'mnist_model.nn'): ") or "mnist_model.nn")
 
 GRID_SIZE = 28
 CELL_SIZE = 20

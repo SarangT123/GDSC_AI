@@ -4,8 +4,7 @@ import numpy as np
 import yaml
 import pickle
 
-from neural_network_vectorized import NeuralNetwork, Data
-
+from neural_network_vectorized_multiple_models import Model_ReLU_CCEL_Softmax, Model_Sig_SL
 
 
 # Load MNIST
@@ -21,6 +20,8 @@ test_images, test_labels = mndata.load_testing()
 with open('config.yaml', 'r') as file:
     config = yaml.safe_load(file)
 
+
+
 print("Configuration Loaded:")
 print(yaml.dump(config, default_flow_style=False))
 
@@ -28,6 +29,17 @@ if input("Proceed with these settings? (y/n): ").lower() != 'y':
     print("Exiting.")
     exit()
 
+
+print(config)
+
+if config['network-functions']['model-type'] == "1":
+    NeuralNetwork, Data = Model_ReLU_CCEL_Softmax.NeuralNetwork, Model_ReLU_CCEL_Softmax.Data
+elif config['network-functions']['model-type'] == "2":
+    NeuralNetwork, Data = Model_Sig_SL.NeuralNetwork, Model_Sig_SL.Data
+else:
+    print("Invalid model type specified in configuration.")
+    exit()
+    
 
 
 # Preprocess data
@@ -135,8 +147,8 @@ for digit in range(10):
 # Save model
 
 print("\nSaving model...")
-with open('mnist_model.nn', 'wb') as f:
+with open('mnist_model_inferior.nn', 'wb') as f:
     pickle.dump({'model': model}, f)
 
-print("Model saved as 'mnist_model.nn'")
+print("Model saved as 'mnist_model_inferior.nn'")
 print("\nTraining complete!")

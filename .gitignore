@@ -1,0 +1,5 @@
+python-mnist
+settings.json
+.vscode/
+__pycache__
+.env

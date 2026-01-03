@@ -1,12 +1,10 @@
 import pickle
 import numpy as np
-from .model import NeuralNetwork
+from . import NeuralNetwork
 def save_network(means,stds,model:NeuralNetwork,filename="model.nn"):
     with open(filename, 'wb') as f:
         pickle.dump({
             'model': model,
-            'means': means,
-            'stds': stds
         }, f)
 
 
@@ -20,4 +18,4 @@ def load_network(filename="model.nn") -> tuple[NeuralNetwork, np.ndarray, np.nda
     """
     with open(filename, 'rb') as f:
         data = pickle.load(f)
-        return (data['model'],data['means'],data['stds'])
+        return (data['model'])

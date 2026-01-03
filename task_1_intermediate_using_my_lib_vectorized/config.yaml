@@ -7,12 +7,9 @@ network-architecture:
   - 10     # Output layer (digits 0–9)
 
 network-functions:
-  activation: sigmoid
-  activation_derivative: sigmoid_derivative
-  output_activation: sigmoid
-  output_activation_derivative: sigmoid_derivative
-  loss_function: square_loss
-  loss_derivative: square_loss_derivative
+  model-type: "1"
+  # model 1 uses ReLU and Softmax(output) as activation functions and Cross-Entropy as loss function
+  # model 2 uses Sigmoid as activation function and squared error as loss function
 
 training-parameters:
   epochs: 20

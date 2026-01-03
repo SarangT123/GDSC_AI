@@ -1,3 +1,7 @@
+"""
+Model that uses sigmoid and square loss
+"""
+
 import numpy as np
 import math
 from collections.abc import Callable
