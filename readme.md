@@ -1,6 +1,8 @@
 The documentation (Handwritten) is available at :  [Documentation](documentation/documentation.md)
 (This is documenting the very first version of the neural network library created from scratch using only numpy)
 
+NOTE FOR GDSC : The neural_network is actually a micro-grad-engine in a sense I was unsure whether you will consider it fit for task4 of the beginners stage, But if it qualifies please consider that as well (this note was added afterwards)
+
 
 ## How to navigate the repository
 - `neural_network/` : Contains the implementation of the neural network from scratch using only numpy with scalars this is extremely slow but this works for small tasks such as task 1 in the beginners track.
