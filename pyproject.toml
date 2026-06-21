@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nnlib"
+version = "0.1.0"
+description = "Neural networks from scratch using only NumPy"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Sarang T" }]
+requires-python = ">=3.10"
+dependencies = ["numpy"]
+
+[project.urls]
+Source = "https://github.com/SarangT123/Neural-Networks-from-scratch"
+
+[tool.setuptools.packages.find]
+where = ["src"]
