@@ -1,7 +1,7 @@
 import numpy as np
 from collections.abc import Callable
 
-from nnlib.activations import relu, relu_derivative
+from loom.activations import relu, relu_derivative
 
 
 def he_init(fan_in, fan_out):

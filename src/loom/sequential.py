@@ -2,10 +2,10 @@ from collections.abc import Callable
 
 import numpy as np
 
-from nnlib.activations import relu, relu_derivative, softmax, softmax_derivative
-from nnlib.data import Data
-from nnlib.layer import Layer
-from nnlib.losses import categorical_crossentropy, categorical_crossentropy_derivative
+from loom.activations import relu, relu_derivative, softmax, softmax_derivative
+from loom.data import Data
+from loom.layer import Layer
+from loom.losses import categorical_crossentropy, categorical_crossentropy_derivative
 
 
 class Sequential:

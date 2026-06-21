@@ -1,4 +1,4 @@
-from nnlib.activations import (
+from loom.activations import (
     linear,
     linear_derivative,
     relu,
@@ -10,9 +10,9 @@ from nnlib.activations import (
     tanh,
     tanh_derivative,
 )
-from nnlib.data import Data
-from nnlib.layer import Layer
-from nnlib.losses import (
+from loom.data import Data
+from loom.layer import Layer
+from loom.losses import (
     binary_crossentropy,
     binary_crossentropy_derivative,
     categorical_crossentropy,
@@ -20,8 +20,8 @@ from nnlib.losses import (
     square_loss,
     square_loss_derivative,
 )
-from nnlib.save import load_network, save_network
-from nnlib.sequential import Sequential
+from loom.save import load_network, save_network
+from loom.sequential import Sequential
 
 __all__ = [
     "Sequential",

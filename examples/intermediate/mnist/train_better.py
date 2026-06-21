@@ -3,7 +3,7 @@ import numpy as np
 import yaml
 import pickle
 
-from nnlib import Sequential, Data
+from loom import Sequential, Data
 
 
 mndata = MNIST('mnist_files')

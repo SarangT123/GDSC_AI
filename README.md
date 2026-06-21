@@ -1,4 +1,4 @@
-# nnlib — Neural Networks from Scratch
+# loom — Neural Networks from Scratch
 
 A minimal neural network library built from scratch using only NumPy. Designed for learning how backpropagation and gradient descent work under the hood.
 
@@ -13,7 +13,7 @@ Requirements: `numpy`
 ## Quickstart
 
 ```python
-from nnlib import Sequential, Data, save_network
+from loom import Sequential, Data, save_network
 
 # 784 inputs → 128 hidden (ReLU) → 10 outputs (softmax)
 model = Sequential([784, 128, 10])

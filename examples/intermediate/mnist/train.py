@@ -3,7 +3,7 @@ import numpy as np
 import yaml
 import pickle
 
-from nnlib import Sequential, Data, sigmoid, sigmoid_derivative, square_loss, square_loss_derivative
+from loom import Sequential, Data, sigmoid, sigmoid_derivative, square_loss, square_loss_derivative
 
 
 mndata = MNIST('mnist_files')
