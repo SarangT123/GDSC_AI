@@ -1,5 +1,43 @@
-python-mnist
-settings.json
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+dist/
+build/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+virtualenv/
+
+# IDE / editors
 .vscode/
-__pycache__
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment
 .env
+.python-version
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Serialized models
+*.nn
+*.pkl
+
+# MNIST data cache
+.python-mnist
+
+# Project-specific config
+settings.json

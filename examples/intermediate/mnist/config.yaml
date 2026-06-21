@@ -1,0 +1,17 @@
+network-architecture:
+  - 784
+  - 256
+  - 128
+  - 64
+  - 32
+  - 10
+
+network-functions:
+  model-type: "1"
+  # "1": ReLU hidden + Softmax output + Cross-Entropy loss
+  # "2": Sigmoid all layers + Square loss
+
+training-parameters:
+  epochs: 20
+  batch_size: 32
+  learning_rate: 0.1
